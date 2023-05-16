@@ -1,0 +1,21 @@
+
+  spring:
+    # DATABASE
+    datasource:
+      url: jdbc:postgresql://localhost:5432/honeydream
+      username: seungju_han
+      password: postgres
+      driver-class-name: org.postgresql.Driver
+
+      # jpa properties
+      jpa:
+        hibernate:
+          ddl-auto: update # When you launch the application for the first time - switch "none" at "create"
+        properties:
+          hibernate:
+            format_sql: true
+
+#  logging:
+#    level:
+#      org.hibernate.SQL: debug
+#      org.hibernate.type: trace
