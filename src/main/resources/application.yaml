@@ -10,7 +10,7 @@
       # jpa properties
       jpa:
         hibernate:
-          ddl-auto: update # When you launch the application for the first time - switch "none" at "create"
+          ddl-auto: create # update # When you launch the application for the first time - switch "none" at "create"
         properties:
           hibernate:
             format_sql: true
