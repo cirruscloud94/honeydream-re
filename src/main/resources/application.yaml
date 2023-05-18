@@ -3,19 +3,22 @@
     # DATABASE
     datasource:
       url: jdbc:postgresql://localhost:5432/honeydream
-      username: seungju_han
+      username: postgres
       password: postgres
       driver-class-name: org.postgresql.Driver
+    thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html
 
       # jpa properties
       jpa:
         hibernate:
-          ddl-auto: create # update # When you launch the application for the first time - switch "none" at "create"
+          ddl-auto: create-drop # update # When you launch the application for the first time - switch "none" at "create"
         properties:
           hibernate:
             format_sql: true
 
-#  logging:
-#    level:
-#      org.hibernate.SQL: debug
-#      org.hibernate.type: trace
+  logging:
+    level:
+      org.hibernate.SQL: debug
+      org.hibernate.type: trace
